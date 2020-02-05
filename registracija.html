@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+    
+        <title>Anketa </title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Simple, clean, responsive website built with html5, CSS3, Js, jQuery and Bootstrap">
+        
+        <meta name="keywords" content="web, design, html, css, html5, css3, javascript, jquery, bootstrap, development">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        
+         <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+        
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        
+        <!-- Fontawesome  -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- BX slider CSS -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+        
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        
+             
+    </head>
+    
+    
+    <body>
+    
+        <!-- Header -->
+        <header class="header" id="HOME">
+            
+            <!-- Navigation -->
+            
+            <nav class="navbar navbar-default navbar-fixed-top">
+              
+                
+                <div class="container">
+                  
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">
+                          <!-- small size logo -->
+                          <img src="images/logo-small.png" alt="logo">
+
+                        </a>
+                    </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      
+                        <li><a href="#" class="nav-item">NASLOVNICA</a></li>
+                                              
+                        <li><a href="./prijava.html" class="nav-item">PRIJAVA</a></li>
+                        
+                  </ul>
+                 
+                 
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+</nav>       
+        </header>
+        
+        
+        <!-- About Us -->
+        <section id="ABOUT">        
+            <div class="container">            
+                <div class="row">                
+                    <div class="col-md-10 col-md-offset-1">
+                    
+                        <!-- About us Title & Description -->
+                        <div class="section-title">
+                         <div class="registracija-header " style="padding-bottom: 20px;" >
+
+                            <h2 > REGISTRACIJA </h2>
+                         </div>
+                           
+
+                            
+                         <div class="contact-us-form wow bounceIn">
+                            <form role="form">
+                    
+                                <div class="row">
+                                
+                                    <div class="col-md-6">
+                                    
+                                       <label> <spna style="color: red ; font-size: 18px;">*</spna> </label> <input type="text" class="form-control" id="ime" placeholder="Ime">
+                                            <span id="username_span"  style="color: red"></span>
+
+                                            <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>   <input type="text" class="form-control" id="prezime" placeholder="Prezime">
+                                             <span id="prezime_span"  style="color: red"></span>
+
+                                             <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>  <input type="email" class="form-control" id="e-mail" placeholder="e-mail">
+                                             <span id="email_span"  style="color: red"></span>
+
+                                             <label> <spna style="color: red ; font-size: 18px;">*</spna> </label> <input type="text" class="form-control" id="datumrodjenja" placeholder="Datum rodjenja">
+                                            <span id="dr_span"  style="color: red"></span>
+
+                                            <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>   <input type="text" class="form-control" id="grad" placeholder="Grad">
+                                             <span id="grad_span"  style="color: red"></span>
+
+                                             <label> <spna style="color: red ; font-size: 18px;">*</spna> </label> 
+                                               <input type="text" class="form-control" id="zupanija" placeholder="Županija">
+                                            <span id="zupanija_span"  style="color: red"></span>
+                                            
+                                            <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>    <input type="text" class="form-control" id="podrucijeobrazovanja" placeholder="Područije obrazovanja">
+                                                 <span id="obrazovanje_span"  style="color: red"></span>
+                                       
+                                    
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                    
+                                        <h5>Stupanje obrazovanja</h5>
+                                        <select class="form-control">
+                                                <option  value="NSS">NSS</option> 
+                                                <option  value="SSS">SSS</option> 
+                                                <option  value="VSS">VSS</option> 
+
+                                        </select>
+
+                                        <label></label>
+                                        
+                                        <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>  <input id="id_pass" type="password" name="password"  class="form-control" placeholder="Unesite lozinku" >
+                                                <span id="pass_span"  style="color: red"></span>
+                                                
+                                                <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>     <input id="id_confim" type="password" class="form-control" name="password_confirm" placeholder="Ponovo unesite lozinku" >
+                                                <span id="confim_span"  style="color: red"></span>
+
+                                                <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>  <form>
+                                            Vrsta korisnika?<br>
+                                            <input type="radio" name="korisnik" id="ispitanik">Ispitanik<br>
+                                                 <span id="kreatork_sapn"  style="color: red"></span>
+
+                                            <input type="radio" name="korisnik" id="kreatorr">Kreator
+                                                <span id="kreatork_sapn"  style="color: red"></span>
+                                          </form>     
+                                            
+                                        </label>
+                                        <br>
+                                        <label >
+                                          
+                                            <input type="checkbox">
+                                            Slažem se s pravilima stranice
+                                        </label>
+
+                                        <a href="./urediProfil.html"> <button type="button" class="btn btn-default submit-btn form_submit " id="spremii"  >Registriraj se</button></a> 
+                                        <button type="button" class="btn btn-default submit-btn  danger">Odustani</button>
+                                    
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>                    
+                    </div>                
+                </div>  
+            </div>       
+         
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+        
+            <div class="container">
+            
+                <div class="row">
+                
+                    <div class="col-md-6">
+                    
+                        <div id="copyright">
+                            <p>Copyright &copy; 2020 <a href="#"> Nikola Butigan & Stipica Klepić</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    
+                            <div class="scroll-top">
+                                <a href="#HOME" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+                            </div>
+                    </div>
+                
+                
+                </div>
+            
+            </div>
+        
+        
+        </footer>
+        <script>
+              var spremii = document.getElementById("spremii");
+        
+              spremii.onclick = function() {
+
+                var ime= document.getElementById('ime').value;
+                var prezime =  document.getElementById('prezime').value;
+                var dr =  document.getElementById('datumrodjenja').value;
+                var email =  document.getElementById('e-mail').value;
+                var grad =  document.getElementById('grad').value;
+                var zupanija =  document.getElementById('zupanija').value;
+                var podrucijeobrazovanja =  document.getElementById('podrucijeobrazovanja').value;
+                var ispitanik = document.getElementById('ispitanik').checked;
+                var kreator = document.getElementById('kreatorr').checked;
+
+                var var_pass= document.getElementById('id_pass').value;         
+                var var_cpass= document.getElementById('id_confim').value;
+                console.log(ispitanik +"" +kreator);
+                
+                if(ime==""){
+                    
+                   document.getElementById('ime').style.border = "1px solid red";
+                   document.getElementById('username_span').innerHTML="*Molimo unesite ime";
+                    return false;
+        
+                } else {
+                        document.getElementById('ime').style.border = "0px";
+                        document.getElementById('username_span').innerHTML="";
+                    }
+                    
+                if(!ispitanik && !kreator){
+                    
+                        
+                       document.getElementById('kreatork_sapn').innerHTML="*Molimo odaberite vrstu korisnika";
+                        
+                       return false;
+         
+                 } else {
+                     console.log("fsaf");
+                       document.getElementById('kreatork_sapn').innerHTML="";
+                         
+                     }
+
+                if(prezime==""){
+       
+                        document.getElementById('prezime').style.border = "1px solid red";
+                        document.getElementById('prezime_span').innerHTML="*Molimo unesite prezime";
+                    return false;
+
+                } else {
+                            document.getElementById('prezime').style.border = "0px";
+                            document.getElementById('prezime_span').innerHTML="";
+                }
+
+                if(email==""){
+      
+                            document.getElementById('e-mail').style.border = "1px solid red";
+                            document.getElementById('email_span').innerHTML="*Molimo unesite e-mail";
+                 return false;
+
+                    } else {
+                             document.getElementById('e-mail').style.border = "0px";
+                             document.getElementById('email_span').innerHTML="";
+                    }
+
+                 if(grad==""){
+      
+                             document.getElementById('grad').style.border = "1px solid red";
+                             document.getElementById('grad_span').innerHTML="*Molimo unesite grad";
+                                return false;
+
+                    } else {
+                            document.getElementById('grad').style.border = "0px";
+                            document.getElementById('grad_span').innerHTML="";
+                    }
+
+                    if(dr==""){
+      
+                            document.getElementById('datumrodjenja').style.border = "1px solid red";
+                            document.getElementById('dr_span').innerHTML="*Molimo unesite datum rodjenja";
+                                return false;
+
+                        } else {
+                            document.getElementById('datumrodjenja').style.border = "0px";
+                            document.getElementById('dr_span').innerHTML="";
+                        }
+
+                    if(zupanija==""){
+      
+                            document.getElementById('zupanija').style.border = "1px solid red";
+                            document.getElementById('zupanija_span').innerHTML="*Molimo unesite zupaniju";
+                                return false;
+
+                        } else {
+                            document.getElementById('zupanija').style.border = "0px";
+                            document.getElementById('zupanija_span').innerHTML="";
+                        }
+                        if(podrucijeobrazovanja==""){
+      
+                            document.getElementById('podrucijeobrazovanja').style.border = "1px solid red";
+                            document.getElementById('obrazovanje_span').innerHTML="*Molimo unesite podrucije obrazovanja";
+                 return false;
+
+       } else {
+           document.getElementById('podrucijeobrazovanja').style.border = "0px";
+           document.getElementById('obrazovanje_span').innerHTML="";
+       }
+
+       if(var_pass==""){
+                   clearBordersAndWarnings3();
+                   document.getElementById('id_pass').style.border = "1px solid red";
+                   document.getElementById('pass_span').innerHTML="*Molimo unesite lozinku";
+                   clearPasswordFields();
+                   return false;
+                }
+                else if(var_pass.length < 6){
+                   clearBordersAndWarnings3();
+                   document.getElementById('id_pass').style.border = "1px solid red";
+                   document.getElementById('pass_span').innerHTML="*Molimo unesite lozinku s minimalno 6 karaktera";
+                   clearPasswordFields();
+                   return false; 
+                }
+                else{
+                   document.getElementById('id_pass').style.border = "0px";
+                   document.getElementById('pass_span').innerHTML="";
+                }
+                
+                if(var_cpass==""){
+                    document.getElementById('id_confim').style.border = "1px solid red";
+                    document.getElementById('confim_span').innerHTML="*Molimo potvrdite lozinku";
+                    return false;
+                }
+                else if(var_pass != var_cpass){
+                    clearPasswordFields();
+                    document.getElementById('id_confim').style.border = "1px solid red";
+                    document.getElementById('id_pass').style.border = "1px solid red";
+                    document.getElementById('confim_span').innerHTML="*Neispravo potvrđena lozinka";
+                    return false;
+                }
+            
+
+               return true;
+            }
+
+            function clearPasswordFields(){
+      document.getElementById('id_pass').value= "";
+      document.getElementById('id_confim').value= "";
+  }
+  
+  function clearBordersAndWarnings(){
+          document.getElementById('id_email').style.border = "0px";
+          document.getElementById('email_span').innerHTML="";
+          document.getElementById('id_pass').style.border = "0px";
+          document.getElementById('pass_span').innerHTML="";
+          document.getElementById('id_confim').style.border = "0px";
+          document.getElementById('confim_span').innerHTML="";
+  }
+  
+  function clearBordersAndWarnings2(){
+          document.getElementById('id_pass').style.border = "0px";
+          document.getElementById('pass_span').innerHTML="";
+          document.getElementById('id_confim').style.border = "0px";
+          document.getElementById('confim_span').innerHTML="";
+  }
+  
+  function clearBordersAndWarnings3(){
+          document.getElementById('id_confim').style.border = "0px";
+          document.getElementById('confim_span').innerHTML="";
+  }
+  
+  
+        
+        
+        </script>
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Bx Slider JS -->
+        <script src="js/jquery.bxslider.min.js"></script>
+        
+        <!-- Add JS counter lib -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        
+        <!-- Add wow js lib -->
+        <script src="js/wow.min.js"></script>
+      
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+        
+    </body>
+
+
+</html>

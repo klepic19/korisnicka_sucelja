@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+    
+        <title>Anketa </title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Simple, clean, responsive website built with html5, CSS3, Js, jQuery and Bootstrap">
+        
+        <meta name="keywords" content="web, design, html, css, html5, css3, javascript, jquery, bootstrap, development">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        
+         <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+        
+        <!-- favicon
+        <link rel="icon" type="image/png" href="images/favicon.png"> -->
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        
+        <!-- Fontawesome  -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- BX slider CSS -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+        
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+           
+            /* Modal Content */
+            .modal-content {
+              background-color: #fefefe;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 30%;
+            }
+            
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            </style>
+             
+    </head>
+    
+    
+    <body>
+    
+        <!-- Header -->
+        <header class="header" id="HOME">
+            
+            <!-- Navigation -->
+            
+            <nav class="navbar navbar-default navbar-fixed-top">
+              
+                
+                <div class="container">
+                  
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">
+                          <!-- small size logo -->
+                          <img src="images/logo-small.png" alt="logo">
+
+                        </a>
+                    </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                        <!--<li><a href="#HOME" class="nav-item">HOME</a></li>-->
+                        <li><a href="./isplata.html" class="nav-item">123$</a></li>
+                        <li><a href="./profil.html" class="nav-item">PROFIL</a></li>
+                        <li><a href="#" class="nav-item">OBAVJESTI</a></li>
+                        <li><a href="./index.html" class="nav-item">ODJAVA</a></li>
+                  </ul>
+                 
+                 
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+</nav>       
+        </header>
+        
+        
+        <!-- About Us -->
+        <section id="ABOUT">        
+            <div class="container">            
+                <div class="row">                
+                    <div class="col-md-10 col-md-offset-1">
+                    
+                        <!-- About us Title & Description -->
+                        <div class="section-title">
+                         <div class="registracija-header" >
+                            
+                            <h2 > UREDI PROFIL </h2>
+                            <p id="spremljeno" ></p>
+                         </div>
+                           
+
+                            
+                         <div class="contact-us-form wow bounceIn">
+                            <form role="form"  >
+                    
+                                <div class="row">
+                                
+                                    <div class="col-md-6">
+                                    
+
+                                        <div id="myModal" class="modal">
+
+                                            <!-- Modal content -->
+                                            <div class="modal-content">
+                                              <span class="close">&times;</span>
+                                              <input type="password" class="form-control" id="staralozinka" placeholder="Stara lozinka" >                                          
+                                              <input type="password" class="form-control" id="novalozinka" placeholder="Nova lozinka">
+                                              <input type="password" class="form-control" id="novalozinka1" placeholder="Ponovo nova lozinka">
+                                              <button type="button" class="btn btn-default submit-btn form_submit spremi" >Spremi</button>
+                                              <button type="button" class="btn btn-default submit-btn form_submit odustani">Odustani</button>
+    
+                                          </div>
+                                          
+                                          </div>
+
+                                        <input type="text" class="form-control" id="ime" placeholder="Ime" >
+                                            <span id="username_span"  style="color: red"></span>
+                                        <input type="text" class="form-control" id="prezime" placeholder="Prezime" >
+                                            <span id="prezime_span"  style="color: red"></span>
+                                        <input type="email" class="form-control" id="e-mail" placeholder="e-mail">
+                                            <span id="email_span"  style="color: red"></span>
+                                        <input type="text" class="form-control" id="datumrodjenja" placeholder="Datum rodjenja">
+                                            <span id="dr_span"  style="color: red"></span>
+                                        <input type="text" class="form-control" id="grad" placeholder="Grad">
+                                            <span id="grad_span"  style="color: red"></span>
+                                        <input type="text" class="form-control" id="zupanija" placeholder="Županija">
+                                            <span id="zupanija_span"  style="color: red"></span>
+                                        <button type="button" class="btn btn-default submit-btn " id="myBtn">Promjeni lozinku</button>
+                                      
+                                       
+                                    
+                                    </div>
+                                   
+                                  
+                                    
+                                    <div class="col-md-6">
+                                    
+                                      
+                                        
+                                
+                                        <button type="button" class="btn btn-default submit-btn form_submit" id="spremii">Spremi</button>
+                                        <button type="button" class="btn btn-default submit-btn  danger">Odustani</button>
+                                    
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                        </div>                    
+                    </div>                
+                </div>  
+            </div>       
+         
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+        
+            <div class="container">
+            
+                <div class="row">
+                
+                    <div class="col-md-6">
+                    
+                        <div id="copyright">
+                            <p>Copyright &copy; 2020 <a href="#"> Nikola Butigan & Stipica Klepić</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    
+                            <div class="scroll-top">
+                                <a href="#HOME" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        
+        </footer>
+        <script>
+            var spremii = document.getElementById("spremii");
+
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            btn.onclick = function() {
+
+                        modal.style.display = "block";
+                       
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            var spremi = document.getElementsByClassName("spremi")[0];
+            
+            var odustani = document.getElementsByClassName("odustani")[0];
+            
+            // When the user clicks the button, open the modal 
+           
+            spremii.onclick = function() {
+                var var_cpass= document.getElementById('ime').value;
+                var prezime =  document.getElementById('prezime').value;
+                var dr =  document.getElementById('datumrodjenja').value;
+                var email =  document.getElementById('e-mail').value;
+                var grad =  document.getElementById('grad').value;
+                var zupanija =  document.getElementById('zupanija').value;
+                
+                if(var_cpass==""){
+      
+                   document.getElementById('ime').style.border = "1px solid red";
+                   document.getElementById('username_span').innerHTML="*Molimo unesite ime";
+                             return false;
+        
+            } else {
+                document.getElementById('ime').style.border = "0px";
+                document.getElementById('username_span').innerHTML="";
+               }
+
+               if(prezime==""){
+      
+                        document.getElementById('prezime').style.border = "1px solid red";
+                        document.getElementById('prezime_span').innerHTML="*Molimo unesite prezime";
+                                    return false;
+
+                } else {
+                document.getElementById('prezime').style.border = "0px";
+                document.getElementById('prezime_span').innerHTML="";
+                }
+
+                if(email==""){
+      
+                            document.getElementById('e-mail').style.border = "1px solid red";
+                            document.getElementById('email_span').innerHTML="*Molimo unesite e-mail";
+                return false;
+
+                    } else {
+                    document.getElementById('e-mail').style.border = "0px";
+                    document.getElementById('email_span').innerHTML="";
+                    }
+
+                    if(grad==""){
+      
+                    document.getElementById('grad').style.border = "1px solid red";
+                    document.getElementById('grad_span').innerHTML="*Molimo unesite grad";
+                                return false;
+
+                    } else {
+                    document.getElementById('grad').style.border = "0px";
+                    document.getElementById('grad_span').innerHTML="";
+                    }
+
+                    if(dr==""){
+      
+                    document.getElementById('datumrodjenja').style.border = "1px solid red";
+                    document.getElementById('dr_span').innerHTML="*Molimo unesite datum rodjenja";
+                                return false;
+
+                        } else {
+                        document.getElementById('datumrodjenja').style.border = "0px";
+                        document.getElementById('dr_span').innerHTML="";
+                        }
+
+                    if(zupanija==""){
+      
+                    document.getElementById('zupanija').style.border = "1px solid red";
+                    document.getElementById('zupanija_span').innerHTML="*Molimo unesite zupaniju";
+                                return false;
+
+                        } else {
+                        document.getElementById('zupanija').style.border = "0px";
+                        document.getElementById('zupanija_span').innerHTML="";
+                        }
+                   
+             
+               return true;
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            spremi.onclick = () =>{
+                modal.style.display = "none";
+                var x =  document.getElementById("spremljeno").innerHTML  = "<span style='font-size:24px;color:green'>Uspjesno ste promjenili lozinku :D</span>";  
+               
+            }
+            odustani.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Bx Slider JS -->
+        <script src="js/jquery.bxslider.min.js"></script>
+        
+        <!-- Add JS counter lib -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        
+        <!-- Add wow js lib -->
+        <script src="js/wow.min.js"></script>
+      
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+        
+    </body>
+
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+    
+        <title>Anketa </title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Simple, clean, responsive website built with html5, CSS3, Js, jQuery and Bootstrap">
+        
+        <meta name="keywords" content="web, design, html, css, html5, css3, javascript, jquery, bootstrap, development">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        
+         <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+        
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        
+        <!-- Fontawesome  -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- BX slider CSS -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+        
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        
+             
+    </head>
+    
+    
+    <body>
+    
+        <!-- Header -->
+        <header class="header" id="HOME">
+            
+            <!-- Navigation -->
+            
+            <nav class="navbar navbar-default navbar-fixed-top">
+              
+                
+                <div class="container">
+                  
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">
+                          <!-- small size logo -->
+                          <img src="images/logo-small.png" alt="logo">
+
+                        </a>
+                    </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html" class="nav-item">NASLOVNICA</a></li>
+                        <li><a href="#" class="nav-item">123$</a></li>
+                        <li><a href="./profil.html" class="nav-item">PROFIL</a></li>
+                        <li><a href="#" class="nav-item">OBAVJESTI</a></li>
+                        <li><a href="./index.html" class="nav-item">ODJAVA</a></li>
+                  </ul>
+                 
+                 
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+</nav>       
+        </header>
+        
+        
+        <!-- About Us -->
+        <section id="ABOUT">        
+            <div class="container">            
+                <div class="row">                
+                    <div class="col-md-10 col-md-offset-1">
+                    
+                       
+                        <div class="section-title">
+                         <div class="registracija-header" >
+
+                            <h2 > UPLATA / ISPLATA </h2>
+                         </div>
+                         <div class="registracija-header" >
+                            
+                              <p id="spremljeno" ></p>
+                         </div>
+                           
+
+                            
+                         <div class="contact-us-form wow bounceIn">
+                            <form role="form">
+                    
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>Stanje na Vašem računu iznosi : 123 $</h3>
+                                    </div>
+                                   
+                                    <div class="col-md-12 " >
+                                        <div class="col-md-4"></div>
+                                       <div class="col-md-4 ">
+                                        <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>   <input type="text" class="form-control" id="brkartice" placeholder="Broj kartice">
+                                         <span id="broj_span"  style="color: red"></span>
+
+                                        
+                                         <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>  <h5>Valjanost</h5>
+                                        
+                                        <select class="form-control">
+                                            <option  value="NSS">01</option> 
+                                            <option  value="SSS">02</option> 
+                                            <option  value="VSS">03</option> 
+                                            <option  value="VSS">04</option>
+                                            <option  value="VSS">05</option>
+
+                                        </select>
+                                        <select class="form-control">
+                                            <option  value="2020">2020</option> 
+                                            <option  value="2021">2021</option> 
+                                            <option  value="2022">2022</option> 
+                                            <option  value="2023">2023</option>
+                                            <option  value="2024">2024</option>
+
+                                        </select>
+                                        <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>   <input type="text" class="form-control" id="cvc" placeholder="cvc">
+                                          <span id="cvc_span"  style="color: red"></span>
+                                          <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>   <input type="text" class="form-control" id="ime" placeholder="Ime">
+                                          <span id="ime_span"  style="color: red"></span>
+                                          <label> <spna style="color: red ; font-size: 18px;">*</spna> </label> <input type="text" class="form-control" id="prezime" placeholder="Prezime">
+                                          <span id="prezime_span"  style="color: red"></span>
+                                          <label> <spna style="color: red ; font-size: 18px;">*</spna> </label>  <input type="text" class="form-control" id="iznos" placeholder="Iznos">
+                                          <span id="iznos_span"  style="color: red"></span>
+                                        <label >
+                                            <input type="checkbox">
+                                            Slažem se s pravilima stranice
+                                        </label>
+                                        <button type="button" class="btn btn-default submit-btn form_submit" id="spremi">Potvrdi</button>
+                                        <button type="button" class="btn btn-default submit-btn form_submit">Odustani</button>
+                                      
+                                       
+                                    
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                                
+                                </div>
+                            </form>
+                            </div>
+                        </div>                    
+                    </div>                
+                </div>  
+            </div>       
+         
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+        
+            <div class="container">
+            
+                <div class="row">
+                
+                    <div class="col-md-6">
+                    
+                        <div id="copyright">
+                            <p>Copyright &copy; 2020 <a href="#"> Nikola Butigan & Stipica Klepić</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    
+                            <div class="scroll-top">
+                                <a href="#HOME" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+                            </div>
+                    </div>
+                
+                
+                </div>
+            
+            </div>
+        
+        
+        </footer>
+        
+        <script>
+            var spremi = document.getElementById('spremi');
+
+            spremi.onclick = () =>{
+                
+                var ime= document.getElementById('ime').value;
+                var prezime =  document.getElementById('prezime').value;
+                var brojKartice = document.getElementById('brkartice').value;
+                var iznos = document.getElementById('iznos').value;
+                var cvc = document.getElementById('cvc').value;
+
+
+                 if(brojKartice=="" || isNaN(brojKartice) || brojKartice< 0 || brojKartice > 99999999  ){
+        
+                         document.getElementById('brkartice').style.border = "1px solid red";
+                         document.getElementById('broj_span').innerHTML="*Molimo unesite ispravno broj kartice";
+                     return false;
+ 
+                 } else {
+                             document.getElementById('brkartice').style.border = "0px";
+                             document.getElementById('broj_span').innerHTML="";
+                 }
+
+                 if(cvc=="" || isNaN(cvc) || cvc< 0 || cvc > 999 ){
+        
+                         document.getElementById('cvc').style.border = "1px solid red";
+                         document.getElementById('cvc_span').innerHTML="*Molimo unesite  ispravno cvc";
+                           return false;
+ 
+                 } else {
+                             document.getElementById('cvc').style.border = "0px";
+                             document.getElementById('cvc_span').innerHTML="";
+                 }
+
+                if(ime==""){
+                    
+                    document.getElementById('ime').style.border = "1px solid red";
+                    document.getElementById('ime_span').innerHTML="*Molimo unesite ime";
+                     return false;
+         
+                 } else {
+                         document.getElementById('ime').style.border = "0px";
+                         document.getElementById('ime_span').innerHTML="";
+                     }
+                     
+                 
+                 if(prezime==""){
+        
+                         document.getElementById('prezime').style.border = "1px solid red";
+                         document.getElementById('prezime_span').innerHTML="*Molimo unesite prezime";
+                     return false;
+ 
+                 } else {
+                             document.getElementById('prezime').style.border = "0px";
+                             document.getElementById('prezime_span').innerHTML="";
+                 }
+
+   
+
+                  if(iznos=="" || isNaN(iznos) || iznos < 0 || iznos > 999999 ){
+        
+                         document.getElementById('iznos').style.border = "1px solid red";
+                         document.getElementById('iznos_span').innerHTML="*Molimo unesite ispravno iznos";
+                     return false;
+ 
+                 } else {
+                             document.getElementById('iznos').style.border = "0px";
+                             document.getElementById('iznos_span').innerHTML="";
+                 }
+                   
+                 
+                
+                
+                var x =  document.getElementById("spremljeno").innerHTML  = "<span style='font-size:24px;color:green'>Uspjesno ste isplatili/uplatili :D</span>";  
+               
+            
+                 
+
+                return true;
+            }
+
+       
+        
+        </script>
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Bx Slider JS -->
+        <script src="js/jquery.bxslider.min.js"></script>
+        
+        <!-- Add JS counter lib -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        
+        <!-- Add wow js lib -->
+        <script src="js/wow.min.js"></script>
+      
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+        
+    </body>
+
+
+</html>
